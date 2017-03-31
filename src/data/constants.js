@@ -177,7 +177,7 @@ export const projects = [
   {
     id: 1,
     name: 'Spiegel Law',
-    url: 'https://spiegel-law.herokuapp.com',
+    url: 'http://spiegel-law.com',
     ghUrl: null,
     image: spiegelThumb,
     alt: 'Spiegel Law Thumbnail Image',
