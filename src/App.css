@@ -1,0 +1,140 @@
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #000;
+}
+
+.small-text {
+  font-size: 0.55em;
+}
+
+.App {
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+}
+
+.menu-component {
+  margin-bottom: 12px;
+}
+
+.menu-left,
+.menu-right {
+  display: inline;
+}
+
+#pinContainer {
+  width: 100%;
+  height: 998px;
+  padding-top: 120px;
+  overflow: hidden;
+}
+
+.panel-wrapper {
+  border: 1px solid #f0c;
+  height: 420px;
+  text-align: center;
+}
+
+.panel {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.element {
+  font-size: 3.5em;
+  margin-top: 120px;
+}
+
+.visible.detail {
+  width: 66%;
+  height: 320px;
+  border-radius: 10px;
+  position: absolute;
+  top: 40px;
+  right: 86px;
+  background-color: #0cf;
+  color: #fff;
+  text-align: left;
+  padding: 40px;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.thumbWrapper img {
+  max-width: 160px;
+}
+
+.thumbWrapper,
+.chipWrapper {
+  display: inline;
+}
+
+/* THUMBNAIL ANIMATIONS */
+
+.animate {
+  animation: move 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move {
+  0% {
+    display: none;
+    top: 20px;
+    left: -800px;
+  }
+  100% {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .App {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-left,
+  .menu-right {
+    display: block;
+  }
+
+  .panel-wrapper.about-wrapper {
+    height: 888px;
+  }
+
+  .thumbWrapper img {
+    max-width: 100px;
+  }
+
+  #pinContainer {
+    padding-top: 20px;
+  }
+
+  .about-component {
+    text-align: left;
+  }
+
+  .element {
+    line-height: 1.3em;
+  }
+
+  .panel {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .visible.detail {
+    width: auto;
+    height: 410px;
+    top: 5px;
+    right: 5px;
+    left: 5px;
+  }
+}
