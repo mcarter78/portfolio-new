@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
-import Resume from '../images/MattResume09232016.pdf';
+import Resume from '../images/MattResume04032017.pdf';
 
 const styles = {
   title: {
